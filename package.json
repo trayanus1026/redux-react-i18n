@@ -1,0 +1,61 @@
+{
+  "name": "redux-react-i18n",
+  "version": "2.0.1",
+  "description": "i18n solution for react/redux",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "jest",
+    "compile": "babel src -d lib",
+    "prepublish": "npm run compile",
+    "build": "npm run compile"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+    "@babel/plugin-transform-runtime": "^7.0.0",
+    "@babel/polyfill": "^7.2.5",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/runtime": "^7.3.1",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.4.2",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "jest": "^22.4.3",
+    "react": ">=16.0.0",
+    "react-dom": ">=16.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/derzunov/redux-react-i18n.git"
+  },
+  "keywords": [
+    "redux",
+    "i18n",
+    "localization",
+    "internationalization",
+    "react",
+    "l10n"
+  ],
+  "author": "derzunov <derzunov.work@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/derzunov/redux-react-i18n/issues"
+  },
+  "homepage": "https://github.com/derzunov/redux-react-i18n#readme",
+  "peerDependencies": {
+    "react": ">=16.0.0",
+    "react-dom": ">=16.0.0",
+    "react-redux": ">=5.0.0",
+    "redux": ">=3.0.0"
+  },
+  "dependencies": {
+    "translatr": ">=2.1.0"
+  },
+  "jest": {
+    "rootDir": "./tests",
+    "setupTestFrameworkScriptFile": "<rootDir>/setupTests.js",
+    "testURL": "http://localhost/"
+  }
+}
